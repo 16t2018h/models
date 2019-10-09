@@ -71,14 +71,39 @@ INSERT INTO O_ATTR
 	VALUES ("4c4e8dca-476d-4696-b8b5-92aecd7c27a9",
 	"f70195ed-5da3-43dd-b1ba-5c4d1759bad6",
 	"837e0d3f-9544-45d7-a2a7-6d191b5c076c",
-	'liine_detections',
+	'line_detections',
 	'',
 	'',
-	'liine_detections',
+	'line_detections',
 	0,
 	"ba5eda7a-def5-0000-0000-000000000002",
 	'',
 	'0');
+INSERT INTO O_NBATTR
+	VALUES ("94e6fad9-0367-4af4-9112-dbcc25e2e15a",
+	"f70195ed-5da3-43dd-b1ba-5c4d1759bad6");
+INSERT INTO O_BATTR
+	VALUES ("94e6fad9-0367-4af4-9112-dbcc25e2e15a",
+	"f70195ed-5da3-43dd-b1ba-5c4d1759bad6");
+INSERT INTO O_ATTR
+	VALUES ("94e6fad9-0367-4af4-9112-dbcc25e2e15a",
+	"f70195ed-5da3-43dd-b1ba-5c4d1759bad6",
+	"4c4e8dca-476d-4696-b8b5-92aecd7c27a9",
+	'last_turn',
+	'',
+	'',
+	'last_turn',
+	0,
+	"dd074cdf-cf2e-43c1-96d4-546b665b3dc9",
+	'',
+	'');
+INSERT INTO S_DT_PROXY
+	VALUES ("dd074cdf-cf2e-43c1-96d4-546b665b3dc9",
+	"00000000-0000-0000-0000-000000000000",
+	'Orientation',
+	'',
+	'',
+	'../../../../IO DTs/IO DTs.xtuml');
 INSERT INTO O_ID
 	VALUES (0,
 	"f70195ed-5da3-43dd-b1ba-5c4d1759bad6");
