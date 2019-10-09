@@ -50,6 +50,52 @@ INSERT INTO PE_PE
 	"65b1f0dd-71e3-4e54-bcc9-da6bbe052982",
 	"00000000-0000-0000-0000-000000000000",
 	1);
+INSERT INTO S_SYNC
+	VALUES ("d1cadb31-c98c-496a-b42d-d071c7bfbafc",
+	"00000000-0000-0000-0000-000000000000",
+	'myfunction',
+	'',
+	'//This is a comment.
+
+LOG::LogInfo( message:"Hello World!" );
+a = 5; LOG::LogInteger( message:a );
+s1 = "I love"; s2= "Rox."; s3 = s1 + s2; LOG::LogInfo(message:s3);
+if(a < 10)
+  LOG::LogInfo( message:"Yes, a is less than 10." );
+else
+ LOG::LogInfo( message:"No, a is not less than 10." );
+ 
+end if;
+
+i=0;
+while (i<10)
+ LOG::LogInteger( message:i );
+ i = i+1;
+end while;
+
+create object instance n4 of navigate;
+n4.retreat_duration = 5;
+n4.target_duration = 2;
+
+create object instance s4 of steering;
+create object instance d4 of drive;
+d4.speed=99;
+
+relate n4 to s4 across R1;
+relate n4 to d4 across R2;
+
+select one d related by s4->navigate[R1.''steers for'']->drive[R2.''directs''];
+LOG::LogInteger( message:d.speed );',
+	"ba5eda7a-def5-0000-0000-000000000000",
+	1,
+	'',
+	0);
+INSERT INTO PE_PE
+	VALUES ("d1cadb31-c98c-496a-b42d-d071c7bfbafc",
+	1,
+	"65b1f0dd-71e3-4e54-bcc9-da6bbe052982",
+	"00000000-0000-0000-0000-000000000000",
+	1);
 INSERT INTO PE_PE
 	VALUES ("65b1f0dd-71e3-4e54-bcc9-da6bbe052982",
 	1,
