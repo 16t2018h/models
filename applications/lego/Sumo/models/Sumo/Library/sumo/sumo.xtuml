@@ -300,10 +300,10 @@ create object instance s of steering;
 relate n to s across R1;
 relate n to d across R2;
 
-d.speed = 255;
+d.speed = 200;
 
-n.retreat_duration = 1;
-n.target_duration = 1;
+n.retreat_duration = 2;
+n.target_duration = 4;
 
 generate navigate1:pop() to n;
 
